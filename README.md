@@ -1,5 +1,5 @@
 # Marking period 3 work
-## Ap Computer science A FDR HS
+## Ap Computer Science A (FDR HS)
 
 
 ### In this repository
