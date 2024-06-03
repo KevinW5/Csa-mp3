@@ -54,7 +54,6 @@ public class GridPath {
     return sum;
 }
 
-  // added to see the array on screen 
   public String toString() {
     return Arrays.deepToString(grid);
   }
