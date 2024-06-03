@@ -6,7 +6,7 @@
 ## Struggles
 - i have problem with checking one by one to see if they contain the word or not.
 
-## ecperience that helped
+## experience that helped
 - arrayList problem in class
 - alberts
 - Project containing arrayList
