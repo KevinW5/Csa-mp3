@@ -26,27 +26,17 @@ public class Scoreboard {
         }
     }
   public String getScore() {
-   String team1N;
-   String team2N;
-   int team1S;
-   int team2S;
-// if active variable team1name = t1, team2 =t2, teamscore1=s1, teamscore2=s2
-   if (active) {
-     team1N = t1;
-     team2N = t2;
-     team1S = s1;
-     team2S = s2;
-    
-   }
-  // otherwise the opposite 
-   else {
-     team1N = t2;
-     team2N = t1;
-     team1S = s2;
-     team2S = s1;
-  }
+    // if active return t1 active
+    if (active) {
+      return s1 + "-" + s2 + "-" + t1;
 
-  return team1S + "-" + team2S + "-" + team1N;
-}
+    }
+    // otherwise the opposite
+    else {
+      return s1 + "-" + s2 + "-" + t2;
+    }
+
   
   }
+
+}
