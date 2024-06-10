@@ -4,9 +4,12 @@ public class Feeder{
   public Feeder(int F){
     currentFood = F;
   }
+ // Part A
 public void simulateOneDay(int numBirds){
+ // 5% bear chance
   boolean normal=(int)(Math.random()*100+1) <= 95;
   if(normal){
+  // random food eaten by each bird (10-50)
     int gramEaten = (int)(Math.random()*(50-10+1)+10)
 ;
   int totalEaten = gramEaten * numBirds;
@@ -16,6 +19,7 @@ public void simulateOneDay(int numBirds){
     currentFood = 0;
   }
   }
+// Part B
   public int simulateManyDays(int numbirds, int numDays){
     int day = 0;
     while(currentFood > 0 && day < numDays){
