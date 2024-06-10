@@ -46,7 +46,7 @@ public class Scoreboard {
      team2S = s1;
   }
 
-  return team1Score + "-" + team2Score + "-" + team1Name;
+  return team1S + "-" + team2S + "-" + team1N;
 }
   
   }
