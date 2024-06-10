@@ -25,44 +25,28 @@ public class Scoreboard {
             active = !active;
         }
     }
-  public String getScore(){
-   String c1=t1;
-   String c2=t2;
-   int p1=s1;
-   int p2=s2;
-    //if team 1 is not active, variable c1 become team 2
-    if (active==false){
-      c1=t2;
-    }
-    // otherwise c1 stays to team 1
-    else {
-      c1=t1;
-    }
-    // if c1 is team 2, c2 becomes team 1
-    if(c1==t2){
-      c2=t1;
-    }
-    // otherwise c2 stays team 2
-    else{
-      c2=t2;
-    }
-    // if c1 is team 1, p1 become score 1
-    if(c1==t1){
-      p1=s1;
-    }
-    // otherwise p1 stays score 2
-    else{
-      p1=s2;
-    }
-    // if p1 is score 1, p2 become score 2
-    if(p1==s1){
-      p2=s2;
-    }
-    // otherwise p2 stays score 1
-    else{
-      p2=s1;
-    }
-      return p1 + "-" + p2 + "-" + c1;
-    }
+  public String getScore() {
+   String team1Name;
+   String team2Name;
+   int team1Score;
+   int team2Score;
+// if active variable team1name = t1, team2 =t2, teamscore1=s1, teamscore2=s2
+   if (active) {
+     team1N = t1;
+     team2N = t2;
+     team1S = s1;
+     team2S = s2;
+    
+   }
+  // otherwise the opposite 
+   else {
+     team1N = t2;
+     team2N = t1;
+     team1S = s2;
+     team2S = s1;
+  }
+
+  return team1Score + "-" + team2Score + "-" + team1Name;
+}
   
   }
